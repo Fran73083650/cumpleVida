@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sorpresa para mi amor ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PANTALLA 1: BOTON INICIAL -->
+  <section id="pantalla-inicio" class="pantalla activa">
+    <div class="contenido-inicio">
+      <h1>Sorpresa Amor ♥</h1>
+      <button id="btn-todo" class="boton-principal">Presiona aquí</button>
+    </div>
+  </section>
+
+  <!-- PANTALLA 2: ANIMACION FELIZ CUMPLEAÑOS -->
+  <section id="pantalla-cumple" class="pantalla">
+    <canvas id="c"></canvas>
+    <button id="btn-siguiente" class="boton-flotante">Siguiente ❤️➜</button>
+  </section>
+
+  <!-- PANTALLA 3: REGALO Y CARTA -->
+  <section id="pantalla-regalo" class="pantalla">
+    <div class="contenido-regalo">
+
+      <div class="regalo" id="regalo-click">
+        <img src="regalocerrado.png" alt="Regalo cerrado" class="img-regalo" id="regalo-cerrado">
+        <img src="regaloabierto.png" alt="Regalo abierto" class="img-regalo" id="regalo-abierto" style="display:none;">
+      </div>
+
+      <p class="instruccion" id="texto-instruccion">Toca el regalo</p>
+
+      <div class="carta" id="carta">
+        <div class="carta-body">
+          <h2 id="carta-titulo"></h2>
+          <p id="carta-texto"></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AUDIOS -->
+  <audio id="audio1" src="cancion1.mp3"></audio>
+  <audio id="audio2" src="cancion2.mp3"></audio>
+
+  <!-- CONFETI -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.1/dist/confetti.browser.min.js"></script>
+
+  <!-- SCRIPTS PROPIOS -->
+  <script src="fireworks.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
